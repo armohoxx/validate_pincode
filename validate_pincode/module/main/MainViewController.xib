@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="validate_pincode" customModuleProvider="target">
+            <connections>
+                <outlet property="containerWelcomeView" destination="KAP-bF-13q" id="vKJ-O3-U0j"/>
+                <outlet property="nextButton" destination="qfA-MR-skT" id="PEP-G1-wCX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="welcomeLabel" destination="euq-OG-c58" id="xBi-Mu-zQP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KAP-bF-13q">
+                    <rect key="frame" x="50" y="258.5" width="275" height="150"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Validate PinCode App" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euq-OG-c58">
+                            <rect key="frame" x="15" y="15" width="245" height="70"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfA-MR-skT">
+                            <rect key="frame" x="87.5" y="100" width="100" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="IXy-MX-dp5"/>
+                                <constraint firstAttribute="height" constant="35" id="cjr-gK-S36"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            <connections>
+                                <action selector="onClickNextButton:" destination="-1" eventType="touchUpInside" id="KGe-wf-SXq"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="euq-OG-c58" firstAttribute="top" secondItem="KAP-bF-13q" secondAttribute="top" constant="15" id="4ax-7e-Ugv"/>
+                        <constraint firstItem="qfA-MR-skT" firstAttribute="top" secondItem="euq-OG-c58" secondAttribute="bottom" constant="15" id="Bc4-rb-ijP"/>
+                        <constraint firstAttribute="trailing" secondItem="euq-OG-c58" secondAttribute="trailing" constant="15" id="Dh3-2D-jAl"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="Wtd-r8-tb0"/>
+                        <constraint firstItem="qfA-MR-skT" firstAttribute="centerX" secondItem="KAP-bF-13q" secondAttribute="centerX" id="fcH-rG-EEn"/>
+                        <constraint firstAttribute="bottom" secondItem="qfA-MR-skT" secondAttribute="bottom" constant="15" id="lQT-Id-gE5"/>
+                        <constraint firstItem="euq-OG-c58" firstAttribute="leading" secondItem="KAP-bF-13q" secondAttribute="leading" constant="15" id="w3N-VS-Vnp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.26666668059999998" green="0.31764706970000001" blue="0.59215688710000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="KAP-bF-13q" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="831-wx-twT"/>
+                <constraint firstAttribute="trailing" secondItem="KAP-bF-13q" secondAttribute="trailing" constant="50" id="9nX-2c-Vuh"/>
+                <constraint firstItem="KAP-bF-13q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="vdK-FR-hAe"/>
+                <constraint firstItem="KAP-bF-13q" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="zu4-TE-nZG"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="-10.344827586206897"/>
+        </view>
+    </objects>
+</document>
